@@ -1,0 +1,142 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:lightcyan;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.header a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contacts-container {
+    margin-top: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust margin for better spacing */
+}
+
+table th, table td {
+    padding: 12px; /* Increase padding for better readability */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: #333;
+    border-right: 1px solid #ddd;
+}
+
+table td {
+    background-color: #fff;
+    color: #333;
+    border-right: 1px solid #ddd;
+}
+
+table img {
+    max-width: 100px;
+    height: auto;
+}
+
+.action-button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.accept-button {
+    background-color: #28a745; /* Green */
+}
+
+.decline-button {
+    background-color: #dc3545; /* Red */
+}
+.alert {
+    padding: 15px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.success {
+    background-color: #4CAF50;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .header h1 {
+        margin-bottom: 10px;
+    }
+
+    .header a {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    table th, table td {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    table img {
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 450px) {
+    table th, table td {
+        padding: 8px; /* Further reduce padding for very small screens */
+    }
+
+    table img {
+        max-width: 60px; /* Adjust image size for very small screens */
+    }
+}
